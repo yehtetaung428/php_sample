@@ -31,8 +31,8 @@ if(file_exists($file)){
     }
 } else{
     echo "ERROR: File does not exist.";
-    echo "<br>";
 }
+echo "<br>";
 
 // List all files in a directory
 $mydir = glob("backup/*");

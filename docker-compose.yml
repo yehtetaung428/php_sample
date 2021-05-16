@@ -24,5 +24,10 @@ services:
             - mysqldata:/var/lib/mysql
         ports:
             - 3306:3306
+    fake-smtpc:
+        image: mailhog/mailhog
+        ports:
+          - "8025:8025"
+          - "1025:1025"
 volumes:
     mysqldata: {}
